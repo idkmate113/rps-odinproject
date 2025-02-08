@@ -9,6 +9,8 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   let humanChoice = prompt("Please choose between Rock,Paper,Scissors", "Rock");
+
+  humanChoice = humanChoice[0].toUpperCase() + humanChoice.slice(1);
 }
 
 function playRound(humanChoice, computerChoice) {}
