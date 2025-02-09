@@ -50,8 +50,6 @@ function playGame() {
       );
     }
   }
-  const humanSelection = getHumanChoice();
-  const computerSelection = getComputerChoice();
 
   for (let i = 0; humanScore < 5 && computerScore < 5; i++) {
     playRound(getHumanChoice(), getComputerChoice());
