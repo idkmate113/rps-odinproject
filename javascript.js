@@ -1,13 +1,11 @@
+let rock = document.querySelector(".rock");
+let paper = document.querySelector(".paper");
+let scissors = document.querySelector(".scissors");
+
 function getComputerChoice() {
   let choice = ["Rock", "Paper", "Scissors"];
   let index = Math.floor(Math.random() * choice.length);
   return choice[index]; // return choice.at(index) works as well
-}
-
-function getHumanChoice() {
-  let humanChoice = prompt("Please choose between Rock,Paper,Scissors", "Rock");
-  humanChoice = humanChoice[0].toUpperCase() + humanChoice.slice(1);
-  return humanChoice;
 }
 
 function playGame() {
@@ -50,10 +48,20 @@ function playGame() {
       );
     }
   }
+  rock.addEventListener("click", () => {
+    let humanChoice = "Rock";
+    playRound(humanChoice, getComputerChoice());
+  });
 
-  for (let i = 0; humanScore < 5 && computerScore < 5; i++) {
-    playRound(getHumanChoice(), getComputerChoice());
-  }
+  paper.addEventListener("click", () => {
+    let humanChoice = "Paper";
+    playRound(humanChoice, getComputerChoice());
+  });
+
+  scissors.addEventListener("click", () => {
+    let humanChoice = "Scissors";
+    playRound(humanChoice, getComputerChoice());
+  });
 }
 
 playGame();
