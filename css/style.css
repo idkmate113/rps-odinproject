@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222831;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 200px 0;
+  gap: 42px;
+}
+.buttons button {
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background-color: #4a4f57;
+}
+.containerWinner {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+}
+
+.containerGame {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.restartContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.restartContainer button {
+  padding: 1em;
+  width: 150px;
+  border: none;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  background-color: #111720;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fac650;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  color: #eee;
+  gap: 8px;
+}
+a {
+  color: #eee;
+}
+div {
+  color: #eee;
+}
